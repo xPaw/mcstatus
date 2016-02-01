@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Minecraft Status · Is Minecraft Down?</title>
+		
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400">
+		
+		<link rel="shortcut icon" href="img/creeper.ico">
+		<link rel="image_src" href="img/creeper.png">
+		
+		<meta name="description" content="Minecraft (Login) Servers Status Checker. When you are getting 'Can't connect to minecraft.net' or 'Took too long to log in' errors, this is a great page to check if Minecraft's servers are acting up.">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta property="og:title" content="Minecraft Status">
+		<meta property="og:site_name" content="Minecraft Status">
+		<meta property="og:description" content="Minecraft (Login) Servers Status Checker. When you are getting 'Can't connect to minecraft.net' or 'Took too long to log in' errors, this is a great page to check if Minecraft's servers are acting up.">
+		<meta property="og:image" content="img/creeper.png">
+		<meta property="og:type" content="website">
+		
+		<!-- MOBILE -->
+		<meta name="application-name" content="Minecraft Status">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<link rel="shortcut icon" sizes="1024x1024" href="img/creeper_1024px.png">
+		<link rel="shortcut icon" sizes="128x128" href="img/creeper.png">
+		<link rel="apple-touch-icon" sizes="128x128" href="img/creeper.png">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="text-center">Current status of Minecraft services</h1>
+				
+				<div class="text-center">
+					<div id="login" class="span2">
+						<div class="service">
+							<div class="name">Login</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="session" class="span2">
+						<div class="service">
+							<div class="name">Session</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="website" class="span2">
+						<div class="service">
+							<div class="name">Website</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="skins" class="span2">
+						<div class="service">
+							<div class="name">Textures</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+					
+					<div id="realms" class="span2">
+						<div class="service">
+							<div class="name">Realms</div>
+							<h2 class="status">Loading…</h2>
+						</div>
+						<div class="uptime">&nbsp;</div>
+					</div>
+				</div>
+				
+				<noscript>This will not work without JavaScript enabled</noscript>
+				
+				<div id="announcement" class="psa"></div>
+				
+				<div class="footer">
+					<hr class="dotted">
+					
+					<div class="text-center">
+						<div class="footer-line">Created by <a target="_blank" href="//xpaw.me">xPaw</a> &amp; <a target="_blank" href="//theaqua.im">theaqua</a></div>
+						<div class="footer-line">
+							<div class="twitter">
+								<svg viewBox="0 0 32 32" version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+									<path d="M28.25,7.134c1.436-0.882,2.385-2.086,2.852-3.616c-1.396,0.741-2.789,1.25-4.178,1.53
+									c-1.25-1.344-2.834-2.026-4.729-2.026c-1.854,0-3.42,0.65-4.699,1.916c-1.271,1.275-1.912,2.824-1.912,4.631
+									c0,0.549,0.068,1.04,0.207,1.457C10.323,10.838,5.797,8.569,2.23,4.204C1.627,5.272,1.324,6.36,1.324,7.485
+									c0,2.312,0.977,4.146,2.925,5.491c-1.111-0.094-2.091-0.375-2.925-0.835c0,1.651,0.485,3.031,1.457,4.245
+									c0.977,1.201,2.23,1.969,3.761,2.295c-0.555,0.143-1.14,0.21-1.74,0.21c-0.555,0-0.948-0.047-1.181-0.147
+									c0.409,1.346,1.181,2.438,2.295,3.272c1.111,0.839,2.389,1.283,3.826,1.321c-2.369,1.857-5.076,2.777-8.139,2.777
+									c-0.75,0-1.281-0.011-1.604-0.069c3.016,1.96,6.375,2.933,10.09,2.933c3.803,0,7.162-0.964,10.088-2.891
+									c2.924-1.917,5.082-4.281,6.469-7.064c1.393-2.781,2.082-5.675,2.082-8.696V9.494C30.076,8.481,31.166,7.339,32,6.079
+									C30.791,6.6,29.541,6.954,28.25,7.134z"></path>
+								</svg>
+							</div>
+							
+							<a target="_blank" href="https://twitter.com/MojangStatus">MojangStatus</a>
+						</div>
+					</div>
+					
+					<hr class="dotted">
+					
+					<div class="pull-left muted">Last update: <span id="last-update">00:00:00 UTC</span>. Refreshing in <span id="time-to-update" class="light-blue">&infin;</span> seconds.</div>
+					
+					<div class="pull-right muted">
+						<span class="notifications"><a href="#">Enable notifications</a></span>
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="assets/mcstatus.js"></script>
+	</body>
+</html>
