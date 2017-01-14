@@ -18,7 +18,7 @@
 			$Checks = Array(
 				//Array( 'Name' => 'login'  , 'Callback' => 'CheckLogin'  , 'Timeout' => 6, 'URL' => 'https://authserver.mojang.com/authenticate' ),
 				Array( 'Name' => 'session', 'Callback' => 'CheckSession', 'Timeout' => 6, 'URL' => 'https://sessionserver.mojang.com/' ),
-				Array( 'Name' => 'website', 'Callback' => 'CheckWebsite', 'Timeout' => 7, 'URL' => 'https://minecraft.net/en/' ),
+				Array( 'Name' => 'website', 'Callback' => 'CheckWebsite', 'Timeout' => 7, 'URL' => 'https://minecraft.net/en-us/' ),
 				Array( 'Name' => 'skins'  , 'Callback' => 'CheckSkins'  , 'Timeout' => 5, 'URL' => 'http://textures.minecraft.net/texture/a116e69a845e227f7ca1fdde8c357c8c821ebd4ba619382ea4a1f87d4ae94' ),
 				//Array( 'Name' => 'realms' , 'Callback' => 'CheckRealms' , 'Timeout' => 4, 'URL' => 'https://mcoapi.minecraft.net/worlds' ),
 				//Array( 'Name' => 'legacy_session', 'Callback' => 'Legacy', 'Timeout' => 4, 'URL' => 'http://session.minecraft.net/health' )
